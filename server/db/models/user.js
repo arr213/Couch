@@ -6,6 +6,12 @@ var Sequelize = require('sequelize');
 var db = require('../_db');
 
 module.exports = db.define('user', {
+    first_name: {
+        type: Sequelize.STRING
+    },
+    last_name: {
+        type: Sequelize.STRING
+    },
     email: {
         type: Sequelize.STRING
     },
@@ -26,18 +32,18 @@ module.exports = db.define('user', {
     }
 }, {
     instanceMethods: {
-        sanitize: function () {
+        sanitize: function() {
             return _.omit(this.toJSON(), ['password', 'salt']);
         },
-        correctPassword: function (candidatePassword) {
+        correctPassword: function(candidatePassword) {
             return this.Model.encryptPassword(candidatePassword, this.salt) === this.password;
         }
     },
     classMethods: {
-        generateSalt: function () {
+        generateSalt: function() {
             return crypto.randomBytes(16).toString('base64');
         },
-        encryptPassword: function (plainText, salt) {
+        encryptPassword: function(plainText, salt) {
             var hash = crypto.createHash('sha1');
             hash.update(plainText);
             hash.update(salt);
