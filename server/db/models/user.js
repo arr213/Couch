@@ -56,9 +56,9 @@ module.exports = db.define('user', {
     }
 });
 
-function setSaltAndPassword(user) {
-    if (user.changed('password')) {
-        user.salt = user.Model.generateSalt();
-        user.password = user.Model.encryptPassword(user.password, user.salt);
-    }
+    function setSaltAndPassword(user) {
+      if (user.changed('password')) {
+          user.salt = user.Model.generateSalt();
+          user.password = user.Model.encryptPassword(user.password, user.salt);
+      }
 }

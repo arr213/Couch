@@ -12,6 +12,9 @@ var Vote = require('./models/vote');
 
 
 // Makes all associations
+var Room_User = db.define('room_user', {})
+var Room_Service = db.define('room_service', {})
+
 Room.belongsToMany(User, { through: 'room_user' });
 User.belongsToMany(Room, { through: 'room_user' });
 
