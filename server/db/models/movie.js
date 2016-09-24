@@ -2,7 +2,7 @@
 var _ = require('lodash');
 var Sequelize = require('sequelize');
 
-var db = require('../_db').default;
+var db = require('../_db');
 
 module.exports = db.define('movie', {
     title: {
