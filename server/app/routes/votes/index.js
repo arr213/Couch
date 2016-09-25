@@ -1,9 +1,9 @@
 'use strict';
 const router = require('express').Router(); // eslint-disable-line new-cap
 const _ = require('lodash');
-const Movie = require('../../../db/models/movies');
-const Vote = require('../../../db/models/votes');
-const User = require('../../../db/models/users');
+const Movie = require('../../../db/models/movie');
+const Vote = require('../../../db/models/vote');
+const User = require('../../../db/models/user');
 
 module.exports = router;
 

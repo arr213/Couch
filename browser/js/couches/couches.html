@@ -1,11 +1,19 @@
-<section id="about">
-    <p>
-        This website--the very one at which you currently gaze--was created by a basic scaffolding
-        concocted at Fullstack Academy. Here are some of the people who make it all very real:
-    </p>
-    <carousel interval="2000">
-        <slide ng-repeat="image in images">
-            <img height="300" ng-src="{{ image }}" />
-        </slide>
-    </carousel>
-</section>
+<div class="container">
+    <div class="row">
+        <h3>Couches</h3>
+        <form>
+            <label>Couch Name</label>
+            <input type="text" name="Couch Name"/>
+            <button>Create</button>
+            <button>Join</button>
+        </form>
+    </div>
+    <div class="col-sm-6" ng-repeat="couch in couches">
+        <a ui-sref="couch">
+            <div>
+                <img src="https://unsplash.it/250">
+            </div>
+            <p>{{couch.name}}</p>
+        </a>
+    </div>
+</div>
