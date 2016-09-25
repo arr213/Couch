@@ -1,9 +1,12 @@
-	<div class='container'>
-	<div>
-		{{currentMovie.title}}
-		<img class="img-responsive" ng-src="{{currentMovie.image}}" ng-swipe-right="submit('YES')" ng-swipe-left="submit('No')" />
-		{{currentMovie.rating}}
-		<br>
-		{{currentMovie.overview}}
+<div class='container'>
+	<div class="row">
+		<div class="col-sm-9">
+			<h3>{{currentMovie.title}}</h3>
+			<img class="img-responsive" ng-src="{{currentMovie.image}}" ng-swipe-right="submit('YES')" ng-swipe-left="submit('No')" />
+			{{currentMovie.rating}}
+			<br>
+			<br>
+			<summary>{{currentMovie.overview}}</summary>
+		</div>
 	</div>
 </div>
