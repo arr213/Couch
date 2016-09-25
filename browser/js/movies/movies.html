@@ -1,16 +1,9 @@
 	<div class='container'>
 	<div>
 		{{currentMovie.title}}
-		<img class="img-responsive" ng-src="{{currentMovie.image}}" />
+		<img class="img-responsive" ng-src="{{currentMovie.image}}" ng-swipe-right="submit('YES')" ng-swipe-left="submit('No')" />
 		{{currentMovie.rating}}
 		<br>
 		{{currentMovie.overview}}
-		<ul>
-			<label>Where You Can Watch</label>
-			<li ng-repeat = "source in currentMovie.sources">{{source}}</li>
-		</ul>
-		<button type="submit" class="btn btn-primary" ng-click = "submit('Yes')">Yes</button>
-		<button type="submit" class="btn btn-primary" ng-click = "submit('No')">No</button>
-		<button type="submit" class="btn btn-primary" ng-click = "submit('Seen')">Seen It</button>
 	</div>
 </div>

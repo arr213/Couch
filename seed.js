@@ -88,7 +88,7 @@ var seedMovies = function () {
 
             title: movie.title,
             gbid: movie.id,
-            image: movie.poster_120x171,
+            image: movie.poster_400x570,
             genres: movie.genres.title,
             sources: sources,
             rating: movie.rating,
