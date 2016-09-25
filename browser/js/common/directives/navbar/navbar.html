@@ -1,17 +1,26 @@
 <nav class="navbar navbar-static-top">
     <div class="container">
         <div class="navbar-header">
-            <flick-pick-logo></flick-pick-logo>
+            <div>
+                <img src="http://simpleicon.com/wp-content/uploads/tv.svg" />
+                <span style="font-size: 30px">flickPick</span>
+            </div>
         </div>
-        <ul class="nav navbar-nav">
-            <li ng-repeat="item in items" ng-show="!item.auth || isLoggedIn()">
-                <a ui-sref-active="active" ui-sref="{{ item.state }}">{{ item.label }}</a>
-            </li>
-        </ul>
         <button ng-show="!user" ui-sref="login" class="btn login-button">Login</button>
         <div ng-show="user" class="welcome">
-            <span>Welcome, {{ user.email }}!</span>
-            <a ng-click="logout()">Logout</a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-menu-hamburger"><span> 
+                </button>
+                <div class="dropdown-menu">
+                    <a us-sref="account">My Couches</a>
+                    <div class="dropdown-divider"></div>
+                    <a us-sref="couches">My Couches</a>
+                    <div class="dropdown-divider"></div>
+                    <a ng-click="logout()">Logout</a>
+                </div>
+            </div>
+            
         </div>
     </div>
 </nav>
