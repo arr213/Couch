@@ -8,16 +8,23 @@ app.factory('MoviesFactory', function($http){
 		return response.data
 	}
 
-	MoviesFactory.getAll(){
+	MoviesFactory.getAll = function(){
 		return $http.get('/api/movies')
 		.then(getData);
 	}
 
-	MoviesFactory.getOne(id){
+	MoviesFactory.getOne = function(id){
 		return $http.get('api/movies/' +id)
 		.then(getData);
 	}
 
+	MoviesFactory.createVote = function(data){
+		return $http.post('api/vote', data)
+		.then(getData)
+	}
+
 	return MoviesFactory;
+
+
 
 })
