@@ -1,0 +1,20 @@
+<div class='container'>
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>It's a match!</h1>
+			<h4>Cuddle up on your couch it's time to watch <b>{{favMovie.title}}</b>!</h4>
+			<p>It's available to watch on:</p>
+			<ul>
+				<li ng-repeat="channel in favMovie.channels">{{channel}}</li>
+			</ul>
+		</div>
+		<div class="col-sm-9">
+			<h3>{{favMovie.title}}</h3>
+			<img class="img-responsive" ng-src="{{favMovie.image}}"/>
+			{{favMovie.rating}}
+			<br>
+			<br>
+			<summary>{{favMovie.overview}}</summary>
+		</div>
+	</div>
+</div>
