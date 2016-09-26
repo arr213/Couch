@@ -30,8 +30,7 @@ app.controller('MoviesCtrl', function($scope, MoviesFactory, $log, $state){
 		if($scope.movies[$scope.movieIndex]){
 			$scope.currentMovie = $scope.movies[$scope.movieIndex]
 		} else {
-			console.log("done");
-			//$state.go('');
+			$state.go('match');
 		}
 
 
