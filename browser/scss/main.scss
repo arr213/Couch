@@ -20,6 +20,16 @@ body {
   margin: 0 auto;
 }
 
+.wrapper {
+    text-align: center;
+}
+
+.home-btn {
+	color: white;
+    position: absolute;
+    top: 50%;
+}
+
 @import 'directives/main';
 @import 'home/main';
 @import 'about/main';
