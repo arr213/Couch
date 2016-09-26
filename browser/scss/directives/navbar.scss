@@ -11,10 +11,14 @@ navbar {
     padding-top: 20px;
   }
 
+  span.logo-text {
+    font-size: 40px;
+  }
+
  img {
     margin-top: 5px;
     margin-right: 20px;
-    width: 40px;
+    width: 100px;
     display: inline;
 
   }
@@ -45,6 +49,7 @@ navbar {
     margin-top: 10px;
     background: none;
     outline: none !important;
+    font-size: 30px;
   }
 
   .welcome {

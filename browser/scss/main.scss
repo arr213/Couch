@@ -5,7 +5,7 @@
 body {
   background: #121314;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 @mixin clearfix {
@@ -23,6 +23,24 @@ body {
 
 .home-btn {
 	color: white;
+}
+
+#plus-button {
+  position: relative;
+  top: 70px;
+  left: 40px;
+}
+
+.col-sm-12 {
+  h3 {
+    font-size: 40px;
+  }
+  form {
+    input {
+      height: 30px;
+      width: 30px;
+    }
+  }
 }
 
 @import 'directives/main';
