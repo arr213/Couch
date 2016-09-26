@@ -1,27 +1,40 @@
 
-<div class='container'>
-	<div class='row'>
-		<div class 
-		<form name= "subscription-filter">
-			<h2><strong>Movie Channels</strong></h2>
-				 <span ng-repeat="channel in channels">
-				 	<input type="checkbox" > {{ channel }}
-				 </span>
-		</form>
-	<div>
-		<form name= "genres-filter">
-			<h2><strong>Mood</strong></h2>
-				 <input type="checkbox"><span>Inspired</span>
-				 <input type="checkbox"><span>Heartbroken</span>
-				 <input type="checkbox"><span>Hungover</span>
-				 <input type="checkbox"><span>Depressed</span>
-				 <input type="checkbox"><span>Dazed</span>
-				 <input type="checkbox"><span>Ecstatic</span>
-				 <input type="checkbox"><span>Adventurous</span>
-				 <input type="checkbox"><span>Dramatic</span>
-				 <input type="checkbox"><span>Mysterious</span>
-				 <input type="checkbox"><span>Amped Up</span>
-
-		</form>
-		<button type="submit" class="btn btn-primary">Create Your Couch</button>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 advanced-search-box">
+    	<form name= "subscription-filter">
+    		<h3>Movie Channels</h3>
+    			 <div ng-repeat="channel in channels">
+    			 	<input type="checkbox" > {{ channel }}
+    			 </div>
+    	</form>
+        <button type="submit" class="btn btn-warning" >Update Your Channels</button>
+    </div>
+    <div class="col-sm-9">
+    	<form name= "genres-filter">
+    		<h2><strong>Mood</strong></h2>
+    			 <input type="checkbox"><span>Inspired</span>
+                 <br>
+    			 <input type="checkbox"><span>Heartbroken</span>
+                 <br>
+    			 <input type="checkbox"><span>Hungover</span>
+                 <br>
+    			 <input type="checkbox"><span>Depressed</span>
+                 <br>
+    			 <input type="checkbox"><span>Dazed</span>
+                 <br>
+    			 <input type="checkbox"><span>Ecstatic</span>
+                 <br>
+    			 <input type="checkbox"><span>Adventurous</span>
+                 <br>
+    			 <input type="checkbox"><span>Dramatic</span>
+                 <br>
+    			 <input type="checkbox"><span>Mysterious</span>
+                 <br>
+  	 			 <input type="checkbox"><span>Amped Up</span>
+    	</form>
+    	<button type="submit" class="btn btn-warning" ui-sref="movies">Create Your Couch</button>
+    </div>    
+  </div>
 </div>
+
