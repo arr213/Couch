@@ -5,7 +5,7 @@
 body {
   background: #121314;
   color: white;
-  text-align: center;
+  font-size: 30px;
 }
 
 @mixin clearfix {
@@ -21,14 +21,8 @@ body {
   margin: 0 auto;
 }
 
-.wrapper {
-    text-align: center;
-}
-
 .home-btn {
 	color: white;
-    position: absolute;
-    top: 50%;
 }
 
 @import 'directives/main';
