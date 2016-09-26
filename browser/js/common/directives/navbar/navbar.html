@@ -2,15 +2,18 @@
     <div class="container">
         <div class="navbar-header">
             <div>
-                <img src="http://simpleicon.com/wp-content/uploads/tv.svg" />
-                <span style="font-size: 30px">flickPick</span>
+            <a ui-sref="couches">
+              <img src="http://simpleicon.com/wp-content/uploads/tv.svg"class="img-logo"
+                title="FlickPick" width= "100">
+            </a> 
+            <span style="font-size: 20px" class="logo-text" color= "#f0ad4e">FlickPick</span>
             </div>
         </div>
         <button ng-show="!user" ui-sref="login" class="btn login-button">Login</button>
         <button ng-show="user" ng-click="logout()" class="btn login-button">Login</button>
 <!--         <div ng-show="user" class="welcome">
             <div class="btn-group">
-                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
                     <span class="glyphicon glyphicon-menu-hamburger"><span> 
                 </button>
                 <div class="dropdown-menu">
@@ -25,3 +28,5 @@
         </div>
     </div>
 </nav>
+
+<i class="icomoon icon-tv"></i>

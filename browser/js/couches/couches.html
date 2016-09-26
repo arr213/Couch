@@ -1,19 +1,33 @@
 <div class="container">
     <div class="row">
-        <h3>Couches</h3>
         <form>
-            <label>Couch Name</label>
-            <input type="text" name="Couch Name"/>
-            <button>Create</button>
-            <button>Join</button>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input-group">
+                  <input type="text" class="form-control couches-search" placeholder="Enter Couch Code">
+                  <span class="input-group-btn">
+                    <button class="btn btn-warning couches-search" type="button">Take A Seat</button>
+                  </span>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
         </form>
     </div>
-    <div class="col-sm-6" ng-repeat="couch in couches">
-        <a ui-sref="couch">
-            <div>
-                <img src="https://unsplash.it/250">
-            </div>
-            <p>{{couch.name}}</p>
-        </a>
+    <div class="col-sm-4">
+    <button type="button" class="btn btn-warning btn-lg couches-add-btn">
+      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    </button>
+   </div>
+    <div class="col-sm-4" ng-repeat="couch in couches">
+        <div>
+            <a ui-sref="couch">
+                <div>
+                    <img src="couch.png" class="couches-image">
+                <span class="couches-caption">
+                    <p>{{couch.name}}<p>
+                </span>
+                </div>
+            </a>
+        <div>
     </div>
 </div>
