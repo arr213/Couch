@@ -14,15 +14,15 @@
         </form>
     </div>
     <div class="col-sm-4">
-    <button type="button" class="btn btn-warning btn-lg couches-add-btn">
-      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    <button id="plus-button" type="button" class="btn btn-warning btn-lg couches-add-btn">
+      <span  class="glyphicon glyphicon-plus" aria-hidden="true"></span>
     </button>
    </div>
     <div class="col-sm-4" ng-repeat="couch in couches">
         <div>
             <a ui-sref="couch">
                 <div>
-                    <img src="couch.png" class="couches-image">
+                    <img src="/images/couch.png" class="couches-image">
                 <span class="couches-caption">
                     <p>{{couch.name}}<p>
                 </span>
