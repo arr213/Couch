@@ -6,6 +6,5 @@ app.config(function($stateProvider){
 		templateUrl: '/js/couch/couch.html',
 		controller: 'CouchCtrl'
 	})
-})
-
+});
 
