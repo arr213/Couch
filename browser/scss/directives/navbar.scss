@@ -11,8 +11,12 @@ navbar {
     padding-top: 20px;
   }
 
-  span.logo-text {
-    font-size: 40px;
+  h1.logo-text {
+    display: inline-block;
+    position: relative;
+    top: 25px;
+    font-size: 45px;
+    color: #f0ad4e;
   }
 
  img {
@@ -47,7 +51,7 @@ navbar {
   .login-button {
     float: right;
     border: 1px solid black;
-    margin-top: 10px;
+    margin-top: 30px;
     background: none;
     outline: none !important;
     font-size: 40px;

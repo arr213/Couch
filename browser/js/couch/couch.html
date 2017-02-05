@@ -5,7 +5,8 @@
     	<form name= "subscription-filter">
     		<h3>Movie Channels</h3>
     			 <div ng-repeat="channel in channels">
-    			 	<input type="checkbox" > {{ channel }}
+    			 	<input type="checkbox" >
+                    <span>{{ channel }}</span>å
     			 </div>
     	</form>
         <button type="submit" class="btn btn-warning" >Update Your Channels</button>

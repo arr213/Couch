@@ -1,4 +1,5 @@
 app.controller('CouchesController', function($scope) {
+  console.log('couches controller!')
 
   $scope.couches = [{
     name: 'Roomies'
@@ -8,8 +9,6 @@ app.controller('CouchesController', function($scope) {
     name: 'Fullstack Movie Night'
   }, {
     name: 'Netflix & Chill'
-  }, {
-    name: 'Friends4Lyfe'
   }];
 
 });
