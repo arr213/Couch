@@ -24,6 +24,9 @@ module.exports = {
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         callbackURL: process.env.GOOGLE_CALLBACK_URL
     },
+      GUIDEBOX: {
+    apiKey: process.env.GUIDEBOX_API_KEY
+  },
     LOGGING: true,
     NATIVE: true
 };

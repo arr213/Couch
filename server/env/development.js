@@ -16,6 +16,9 @@ module.exports = {
     clientSecret: 'INSERT_GOOGLE_CLIENT_SECRET_HERE',
     callbackURL: 'INSERT_GOOGLE_CALLBACK_HERE'
   },
+  GUIDEBOX: {
+    apiKey: 'ecf7559f0413c2a0e9b4586c088affd913e5f963'
+  },
   LOGGING: true,
   NATIVE: true
 };
